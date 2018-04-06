@@ -9,6 +9,8 @@ Cohort Analysis is important because a single metric (e.g. Average Lifetime spen
 
 Cohort Analysis represents a metric in two dimensions (over time for each cohort of customers), and over different cohorts (usually based on when that cohort first ordered).
 
+![Cohort Analysis Example](https://github.com/F27Ventures/cohorts/blob/master/cohorts_screenshot_example.png)
+
 # Our Model of Cohort Analysis
 
 In order to do Cohort Analysis, you need to define the following things:
