@@ -1,3 +1,7 @@
+[![PyPI version shields.io](https://img.shields.io/pypi/v/f27-cohorts.svg)](https://pypi.python.org/pypi/f27-cohorts/)
+[![GitHub license](https://img.shields.io/github/license/F27Ventures/cohorts.svg)](https://github.com/F27Ventures/cohorts/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/F27Ventures/cohorts.svg)](https://GitHub.com/F27Ventures/cohorts/graphs/contributors/)
+
 # cohorts
 cohorts.py makes generating cohort analysis from raw data a magical experience
 
@@ -64,3 +68,5 @@ Paris	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	Cohort Size
 
 # Notes on F27 Ventures
 F27 was started by a group of 27-year olds who wanted to change the world one code commit at a time. We've worked at startups, large corporates and gone freelance. You don't have to be 27 to be part of our journey, you just need to dig what we do.
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
