@@ -3,3 +3,6 @@
 *.xml
 *.pyc
 venv/
+build/
+dist/
+f27_cohorts.egg-info/
