@@ -69,4 +69,6 @@ Paris	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	Cohort Size
 # Notes on F27 Ventures
 F27 was started by a group of 27-year olds who wanted to change the world one code commit at a time. We've worked at startups, large corporates and gone freelance. You don't have to be 27 to be part of our journey, you just need to dig what we do.
 
+![F27](https://github.com/F27Ventures/cohorts/blob/master/F27-888x100-1b_02.jpg)
+
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
