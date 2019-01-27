@@ -82,8 +82,34 @@ def first_order_day(member):
 
     return FOD
 
+
+def toMonth(q):
+    return ((q-1)*3)+1
+
+def quarter(m):
+    return 1+((m-1)//3)
+
+def first_order_quarter(member):
+    # Assumes member consists of entries each with a timestamp
+    earliest_date = datetime.datetime(9999, 1, 1)
+
+    # Find earliest date in records for this member
+    for entry in member.entries:
+        dt = entry.timestamp
+        if dt < earliest_date:
+            earliest_date = dt
+
+    FOQ = datetime.datetime(earliest_date.year, toMonth(quarter(earliest_date.month)), 1)
+
+    return FOQ
+
+
+
 def granularity_yearly(FOM, TS):
     return (TS.year - FOM.year)
+
+def granularity_quarterly(FOQ, TS):
+    return (TS.year - FOQ.year) * 4 + (quarter(TS.month) - quarter(FOQ.month))
 
 def granularity_monthly(FOM, TS):
     return (TS.year - FOM.year) * 12 + (TS.month - FOM.month)
@@ -94,12 +120,10 @@ def granularity_weekly(FOW, TS):
 def granularity_daily(FOD, TS):
     return (TS - FOD).days
 
+
+
 TimeModelYearly = TimeModel(first_order_yearly, granularity_yearly)
+TimeModelQuarterly = TimeModel(first_order_quarter, granularity_quarterly)
 TimeModelMonthly = TimeModel(first_order_month, granularity_monthly)
 TimeModelWeekly = TimeModel(first_order_week, granularity_weekly)
 TimeModelDaily = TimeModel(first_order_day, granularity_daily)
-
-
-
-
-
